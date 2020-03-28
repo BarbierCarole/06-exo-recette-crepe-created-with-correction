@@ -1,0 +1,25 @@
+.instructions {
+  position: relative;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: .05em;
+  
+  &-content {
+    bottom: 2rem;
+    padding: 2rem;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  &-li {
+    line-height: 2em;
+    font-size: 1.1em;
+    margin-left: 32px;
+    text-indent: -32px;
+  }
+  &-li::before {
+    content: "\002014";
+    color: #ff985d; 
+    padding-right: 8px;
+  }
+}

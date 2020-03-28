@@ -1,0 +1,26 @@
+.ingredient {
+  position: relative;
+  margin-bottom: 2rem;
+  color: #000;
+  letter-spacing: .05em;
+    
+
+  &-span {
+    color: #fff;
+    background: #ff985d;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 3.5em;
+    margin-left: 30px;
+  }
+
+  &-li {
+    border-bottom: solid 1px #ddd ;
+    
+  }
+
+  &-li:last-child {
+    border-bottom: none ;
+  }
+}

@@ -2,16 +2,36 @@
 import React from 'react';
 
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import data from 'src/data/recipe';
+import Header from 'src/components/Header';
+import Ingredients from 'src/components/Ingredients';
+import Instructions from 'src/components/Instructions';
+import './style.css';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-  </div>
-);
+const App = () => {
+  const {
+    thumbnail,
+    title,
+    author,
+    difficulty,
+    ingredients,
+    instructions,
+  } = data;
+
+  return (
+    <div className="app">
+      <Header
+        thumbnail={thumbnail}
+        title={title}
+        author={author}
+        difficulty={difficulty}
+      />
+      <Ingredients ingredients={ingredients} />
+      <Instructions instructions={instructions} />
+    </div>
+  );
+};
 
 // == Export
 export default App;
